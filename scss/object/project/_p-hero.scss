@@ -8,7 +8,7 @@
         @include g.pc{
         aspect-ratio: 1553 /530;
         }
-    &__background{
+    &__background{ //JS
         background-color: g.$color-black;
         width: 70%;
         position: absolute;

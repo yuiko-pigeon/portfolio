@@ -72,10 +72,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   console.log("アニメーション実行", element);
           gsap.to(element,{
-            
               y: 0,
               delay: 0.5,
-              duration: 1,
+              duration: 2,
               autoAlpha: 1,
               ease: "power4.out"
             }
