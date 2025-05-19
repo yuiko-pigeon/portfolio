@@ -1,0 +1,18 @@
+@use "../../foundation/global/index" as g;
+
+.p-title{
+    &__hero{
+        display: flex;
+        align-items: center;
+        padding-left: 6.7%;
+        position: relative;
+        z-index: -1 ;
+        opacity: 0;
+            @include g.tab{
+                padding-left: 10.3%;
+            }
+            @include g.pc{
+                padding-left: 5.5%;
+            }
+    }
+}

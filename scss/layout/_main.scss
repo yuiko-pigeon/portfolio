@@ -1,0 +1,14 @@
+@use "../foundation/global/index" as g;
+
+.l-main{
+    flex-grow: 1;
+        @include g.pc{
+            width: 100%;
+            grid-row:2/3;
+            grid-column:1/2;
+        }
+    &__font {
+        font-family: g.$fontMp;
+        font-weight: g.$bold;//700
+        }
+}

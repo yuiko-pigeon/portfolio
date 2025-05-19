@@ -1,0 +1,62 @@
+@use "../../foundation/global/index" as g;
+
+.c-solid{
+    &__before{
+        display: flex;
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+        color: rgba(188, 186, 186, 0.8);
+        @include g.pc {
+            margin: 0 5% 0 0;
+        }
+        &::before{
+            @include g.sp {
+                display: flex;
+                content: "";
+                width:30%;
+                height: 0.125rem;//2px
+                margin-right: 5%;
+                background-color: rgba(188, 186, 186, 0.8);
+            }
+            @include g.pc {
+                display: flex;
+                content: "";
+                height: 0.125rem;//2px
+                width: 60%;
+                margin-right: 3rem;
+                background-color: rgba(188, 186, 186, 0.8);
+            }
+        }
+        &::after{
+            @include g.sp {
+                display: flex;
+                content: "";
+                width:30%;
+                height: 0.125rem;//2px
+                margin-left: 5%;
+                background-color: rgba(188, 186, 186, 0.8);
+            }
+            @include g.pc {
+                display: none;
+
+            }
+        }
+    }
+    &__after{
+        &::before{
+            @include g.sp {
+                display: none;
+            }
+            @include g.pc {
+                display: flex;
+                content: "";
+                height: 0.125rem;//2px
+                width: 60%;
+                margin-left: 3rem;
+                background-color: rgba(188, 186, 186, 0.8)
+            }
+        }
+    }   
+}

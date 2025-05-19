@@ -1,0 +1,49 @@
+//foundation
+@use "foundation/global";
+@use "foundation/base";
+@use "foundation/reset";
+
+//layouut
+@use "layout/footer";
+@use "layout/header";
+@use "layout/main";
+@use "layout/wrapper";
+
+//object
+
+//component
+@use "object/component/c-title";
+@use "object/component/c-button";
+@use "object/component/c-text";
+@use "object/component/c-link";
+@use "object/component/c-hamburger";
+@use "object/component/c-solid";
+@use "object/component/c-icon";
+@use "object/component/c-image";
+
+//project
+@use "object/project/p-article";
+@use "object/project/p-hero";
+@use "object/project/p-footer";
+@use "object/project/p-menu";;
+@use "object/project/p-grid";
+@use "object/project/p-block";
+@use "object/project/p-link";
+@use "object/project/p-header";
+@use "object/project/p-card";
+@use "object/project/p-swiper";
+@use "object/project/p-slide";
+@use "object/project/p-modal";
+@use "object/project/p-title";
+@use "object/project/p-grid-profile";
+
+
+//utility
+@use "object/utility/u-margin";
+@use "object/utility/u-width";
+@use "object/utility/u-lineheight";
+@use "object/utility/u-padding";
+@use "object/utility/u-weight";
+@use "object/utility/u-text";
+@use "object/utility/u-center";
+

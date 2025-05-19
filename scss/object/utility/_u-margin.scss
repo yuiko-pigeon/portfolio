@@ -1,0 +1,31 @@
+@use "../../foundation/global/index" as g;
+
+.u-margin{
+    &__center{
+        margin: 0 auto;
+    }
+    &__top{
+        margin-top: 6rem;
+    }
+    &__top--small{
+        margin-top: 3rem;
+    }
+    &__top--card{
+        margin-top:1rem;
+        @include g.tab{
+            margin-top: 2rem;
+        }
+        @include g.pc{
+            margin-top: 3rem;
+        }
+    }
+    &__midium--center{
+        margin:5rem auto 0 auto;
+    }//profileイメージ上部
+    &__bottom--card{
+        margin-bottom: 3.4375rem;
+    }
+    &__text--card{
+        margin: 0 5%;
+    }
+}   

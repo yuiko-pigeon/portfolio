@@ -1,0 +1,8 @@
+.p-slide{
+    &__in{
+        opacity: 0;
+        z-index: -2;
+        transform: translateY(100px);
+        visibility: hidden;
+        }
+    }

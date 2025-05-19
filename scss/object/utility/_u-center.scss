@@ -1,0 +1,8 @@
+@use "../../foundation/global/index" as g;
+
+.u-center{
+    &__text{
+        display: flex;
+        justify-self: center;
+    }
+}

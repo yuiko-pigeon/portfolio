@@ -1,0 +1,29 @@
+@use "../../foundation/global/index" as g;
+
+.p-link{
+    &__footer{
+        cursor: pointer;
+        &:link{
+            color: g.$color-white;
+            text-decoration: none;
+        }
+        &:visited{
+            color: g.$color-white;
+            text-decoration: none;
+        }
+        &:hover{
+            color: g.$color-white;
+            text-decoration: underline;
+            text-decoration-color: g.$color-white;
+        }
+        &:focus{
+            color: g.$color-white;
+            text-decoration: none;
+        }
+        &:active{
+            color: g.$color-white;
+            text-decoration: none;
+        } 
+        
+    }
+}

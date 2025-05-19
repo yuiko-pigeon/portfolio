@@ -1,0 +1,32 @@
+@use "../../foundation/global/index" as g;
+
+
+.p-footer{
+    &__text{
+        display: block;
+        font-family: g.$fontMp;
+        font-weight: g.$Mbold;
+        color: g.$color-white;
+        @include g.sp{
+            font-size: 1.125rem;//18px
+        }
+        @include g.tab{
+            font-size:1.25rem;
+        }        
+    }
+    &__text--small{
+        display: block;
+        font-family: g.$fontMp;
+        font-weight: g.$Mbold;
+        color: g.$color-white;
+        font-size: 0.875rem;//14px
+        
+    }
+    &__color{
+        display: block;
+        background-color: g.$color-lightGray;
+        background-size: cover;
+        height: 100%;//%に?
+    }
+
+}

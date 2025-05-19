@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="/picture/favicon.ico" id="favicon">
+    <script src="https://kit.fontawesome.com/97913a225f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+    <title>and8</title>
+</head>
+<body>
+    <div class="l-wrapper" id="js-wrapper">
+        <header class="l-header" role="banner">
+            <div class="u-text__small p-header__title">
+                <h1 class="p-header__logo--area">
+                    <a href="/"><img class="lazyload p-header__logo" src="picture/logo2.png" alt="ロゴ：and 8" ></a>
+                </h1>
+            </div>
+            <!--hamburgerbutton-->
+            <div  class="c-hamburger__button--area" id="js-hamburger">
+                <div class="c-hamburger__button--open" ></div>
+            </div>
+            <!--hamburgerbutton-->
+            <div class="header_link p-header__nav ">
+                <nav class="header-nav header-hmbnav" id="">
+                    <ul class="p-header__menulist">
+                        <li class="">
+                            <a href="" class="c-link__list"> And 8 </a>
+                        </li>
+                        <li class="">
+                            <a class="c-link__list"> Service </a>
+                        </li>   
+                        <li class="">
+                            <a href="" class="c-link__list"> Works </a>
+                        </li>
+                        <li class="">
+                            <a class="c-link__list"> Profile </a>
+                        </li>
+                        <li class="">
+                            <div class="">
+                            <a href="" class="c-link__list" >Contact </a></div> <!--受講申込みだけナビとは別に作って背景枠ボックスごとリンクできるようにする。そして一番右に設置して、そこに合わせてflexboxを設置する?-->
+                        </li>
+                    </ul>
+                </nav>
+            </div><!--header_link-->
+        </header> 
+        <!--hamburgermenu-->
+        <nav class="p-menu" id="js-nav">
+            <div class="p-menu__inner">
+                <div  class="c-hamburger__button--area" id="js-hamburgerClose">
+                    <div class="c-hamburger__button--close"></div>
+                </div>
+                <div class="">
+                    <ul class="p-menu__menulist">
+                        <li class="p-menu__list c-link__list">
+                            <a href="" class=""> And 8 </a>
+                        </li>
+                        <li class="p-menu__list c-link__list">
+                            <a class=""> Service </a>
+                        </li>   
+                        <li class="p-menu__list c-link__list">
+                            <a href="" class=""> Works </a>
+                        </li>
+                        <li class="p-menu__list c-link__list">
+                            <a class=""> Profile </a>
+                        </li>
+                        <li class="p-menu__list c-link__list">
+                            <div class="">
+                            <a href="" class="" >Contact </a></div> <!--受講申込みだけナビとは別に作って背景枠ボックスごとリンクできるようにする。そして一番右に設置して、そこに合わせてflexboxを設置する?-->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <main  class="l-main l-main__font">
+            <div class="p-hero">
+                <div class="p-hero__background"></div>
+                <p class="c-title__hero p-title__hero" id="js-title-hero">Beyond the visible. Living code behind design.</p>
+            </div>
+             <!-- <article class="u-center__text">
+              <p class="c-text__large u-margin__center">And 8 はフリーランスの柔軟性でみなさまのビジネスをサポートします。<br>
+しっかりとしたコミュニケーションで円滑なサイト作りを提供します。</p> 
+               </p>
+            </article> -->
+            <section class="p-block">
+                <div class="c-solid__area u-margin__top"> 
+                    <h2 class="c-solid__before  c-title__contents">Service</h2>
+                </div>
+                <section class="p-block__card u-margin__top--small">
+                    <article class="p-card u-margin__top--card p-slide__in">
+                        <h3 class="c-title__card">Coding</h3>
+                            <i class="fa-solid fa-mobile-screen-button c-icon__mobile"></i>
+                        <p class="c-text u-margin__text--card c-text__center">- 静的コーディング -<br>HTML/CSS<br><br>- アニメーション -<br>JavaScript/GSAP(簡易)<br>レスポンシブ対応</p>
+                    </article>
+                    <article class="p-card u-padding__left u-margin__top--card p-slide__in">
+                        <h3 class="c-title__card">WordPress</h3>
+                        <i class="fa-brands fa-wordpress c-icon__mobile"></i>
+                        <p class="c-text u-margin__text--card c-text__center">- WordPressサイトの構築 -<br>
+                            テーマカスタマイズ<br>オリジナルテーマの作成<br>ブログやコーポレートサイトに対応</p>
+                        <p  class="u-margin__text--card c-text">クラッシックエディタ・ブロックエディタを利用して構築します。</p>
+                    </article>
+                    <articlse class="p-card u-margin__top--card u-margin__bottom--card p-slide__in">
+                        <h3 class="c-title__card">Upkeep</h3>
+                        <i class="fa-solid fa-screwdriver-wrench c-icon__mobile"></i>
+                        <p class="c-text u-margin__text--card c-text__center">既存サイトのテキスト修正<br>画像差し替え<br>CSS調整等<br></p>
+                    </article>
+                </section>
+            </section>
+            <section class="p-block">
+                <div class="c-solid__area u-margin__top--small"> 
+                    <h2 class="c-solid__before u-margin c-title__contents">Works</h2>
+                    <section class="p-grid u-margin__top">
+                        <figure class="p-grid__cell p-slide__in js-open-modal" data-index="0"> <!--data-index="0"-->
+                            <img src="./picture/noimage.jpg" alt="works1" class="p-grid__image">
+                            <figcaption class="p-grid__text">
+                                <h4 class="c-title__grid">有限会社 らきカンパニー様</h4>
+                                <p class="c-text u-margin__text--card c-text__center">HTML/CSS/JavaScript/WordPress</p>
+                                <p class="p-grid__icon">link git</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="p-grid__cell p-slide__in js-open-modal" data-index="1">
+                            <img src="./picture/noimage.jpg" alt="works2" class="p-grid__image">
+                            <figcaption class="p-grid__text">
+                                <h4 class="c-title__grid">株式会社 ここホーム様</h4>
+                                <p class="c-text u-margin__text--card c-text__center">HTML/CSS/JavaScript/React</p>
+                                <p class="p-grid__icon">link git</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="p-grid__cell p-slide__in js-open-modal" data-index="2">
+                            <img src="./picture/noimage.jpg" alt="works1" class="p-grid__image">
+                            <figcaption class="p-grid__text">
+                                <h4 class="c-title__grid c-title__grid--area">宮野農園</h4>
+                                <p class="c-text u-margin__text--card c-text__center">WordPress</p>
+                                <p class="p-grid__icon">link git</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="p-grid__cell p-slide__in js-open-modal" data-index="3">
+                            <img src="./picture/noimage.jpg" alt="works1" class="p-grid__image">
+                            <figcaption class="p-grid__text">
+                                <h4 class="c-title__grid c-title__grid--area">Hamburgerサイト（架空）</h4>
+                                <p class="c-text u-margin__text--card c-text__center">WordPress</p>
+                                <p class="p-grid__icon">link git</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="p-grid__cell p-slide__in js-open-modal" data-index="4">
+                            <img src="./picture/noimage.jpg" alt="works2" class="p-grid__image">
+                            <figcaption class="p-grid__text">
+                                <h4 class="c-title__grid c-title__grid--area">模写コーディング</h4>
+                                <p class="c-text u-margin__text--card c-text__center">WordPress</p>
+                                <p class="p-grid__icon">link git</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="p-grid__cell p-slide__in js-open-modal" data-index="5">
+                            <img src="./picture/noimage.jpg" alt="works2" class="p-grid__image">
+                            <figcaption class="p-grid__text">
+                                <h4 class="c-title__grid c-title__grid--area">Works 2</h4>
+                                <p class="c-text u-margin__text--card c-text__center">WordPress</p>
+                                <p class="p-grid__icon">link git</p>
+                            </figcaption>
+                        </figure>
+                    </section>
+                </div>
+            </section>
+            <section class="p-block__service">
+                <div class="c-solid__area u-margin__top"> 
+                    <h2 class="c-solid__before u-margin c-title__contents">Profile</h2>
+                    <figure class="p-grid-profile">
+                        <img src="./picture/noimage.jpg" alt="プロフィール画像" class="c-image__round u-margin__midium--center">
+                        <figcaption>
+                            <h3 class="c-title__grid">yuiko</h3>
+                            <p class="p-grid-profile__text">愛知県在住のフリーランスWebコーダー、鈴木 結子と申します。WordPressを使ったサイト構築を中心に、破綻しにくいコードとユーザー目線の設計を心がけています。HTML、CSS、JavaScriptを活用し、レスポンシブ対応や保守性の高いコーディングを得意とします。制作会社様やWebディレクター様の意図を汲み取り、柔軟かつ丁寧な対応でプロジェクトをサポート。将来はフロントエンドエンジニアとしてさらにスキルを磨くことを目指しています。エンドユーザー様には、使いやすく見栄えの良いサイトをお届けします。</p>
+                        </figcaption>
+                </div>
+            </section>
+            <section class="p-block__service">
+                <div class="c-solid__area u-margin__top"> 
+                    <h2 class="c-solid__before u-margin c-title__contents">Contact</h2>
+                </div>
+            </section>
+
+        </main>
+        <footer class="l-footer">
+            <div class="l-footer__inner">
+                <div class="p-footer__color">
+                    <div class="p-footer__image">   
+                        <article class="l-footer__textarea"> 
+                            <section class="p-footer__text l-footer__text">
+                                <a href="" class="p-link__footer">ショップ情報</a><a>｜</a><a href="" class="p-link__footer">ヒストリー</a>
+                            </section>
+                            <section class="p-footer__text--small l-footer__text--small">
+                                <a>CopyRight: RaiseTech</a>
+                            </section>
+                        </article>
+                    </div>
+                </div>
+            </div>  
+        </footer>
+    </div>
+    <!--modal-->
+    <div id="portfolio-modal" class="p-modal__portfolio">
+        <div class="p-modal__content">
+            <button class="p-modal__close">×</button>
+            <!-- Slider main container -->
+            <div class="p-swiper swiper">
+                <!-- Additional required wrapper -->
+                <div class="p-swiper__wrapper swiper-wrapper">
+            <!-- Slides -->
+                    <div class="p-swiper__slide swiper-slide">Slide 1</div>
+                    <div class="p-swiper__slide swiper-slide">Slide 2</div>
+                    <div class="p-swiper__slide swiper-slide">Slide 3</div>
+                    <div class="p-swiper__slide swiper-slide">Slide 4</div>
+                    <div class="p-swiper__slide swiper-slide">Slide 5</div>
+                    <div class="p-swiper__slide swiper-slide">Slide 6</div>   
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+    </div>
+    <!--modalここまで-->
+    <script src="./js/main.js" defer></script>
+</body>
+</html>
+
+

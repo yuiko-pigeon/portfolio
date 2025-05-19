@@ -1,0 +1,19 @@
+@use "../foundation/global/index" as g;
+
+
+.l-header{
+    height: 13rem;//215px
+    display: flex;
+    
+    position: relative;
+    //background: antiquewhite;//仮
+        @include g.tab{
+            height: 13rem;//217px
+        }
+        @include g.pc{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+}

@@ -1,0 +1,67 @@
+@use "../../foundation/global/index" as g;
+
+.p-header{
+    &__title{
+        display: flex;
+        font: g.$bold 2.5rem g.$fontR;//40px
+        color: g.$color-black;
+            @include g.pc{
+                margin: 0;
+                padding: 0;
+                font-size: 4.0rem;//64px
+                line-height: 4.6875rem;//75px
+                }
+        >a{
+            cursor: pointer;
+            &:link{
+                color: g.$color-gray;
+                text-decoration: none;
+            }
+            &:visited{
+                color: g.$color-gray;
+                text-decoration: none;
+            }
+            &:hover{
+                color: g.$color-gray;
+                text-decoration: none;
+                text-decoration-color: g.$color-gray;
+            }
+            &:focus{
+                color: g.$color-gray;
+                text-decoration: none;
+            }
+            &:active{
+                color: g.$color-gray;
+                text-decoration: none;
+            } 
+        }
+    }
+    &__nav{ //ヘッダーメニューPCのみ表示
+        display: none;
+        @include g.pc{
+            display: block;    
+            margin-right: 30px;
+        }
+    }
+    &__menulist{
+        display: flex;
+        width: 100%;
+        gap: 1.71%;
+        position: absolute;
+        top: 65%;
+        left: 70%;
+        font-family:g.$fontN
+    }
+    &__logo{
+        position: absolute;
+        left: 1rem;
+        top: 2rem;
+        @include g.pc{
+            left: 4rem;
+            top: -2rem;
+            &--area{
+                position: relative;
+            }
+        }
+    }
+}

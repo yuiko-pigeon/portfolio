@@ -1,0 +1,67 @@
+@use "../../foundation/global/index" as g;
+
+.c-hamburger{
+    &__button--open{
+        display: block;
+        content: "";
+        background-color: g.$color-black;
+        width: 2.6rem;
+        height: 0.08rem;
+        position: relative;
+        top: 50%;
+        &:before{
+            position: absolute;
+            top:-12px;
+            left:0;
+            content: "";
+            background-color: red;
+            width: 2.6rem;
+            height: 0.08rem;
+        }
+        &:after{
+            position: absolute;
+            top:12px;
+            left:0;
+            content: "";
+            background-color: blue;
+            width: 2.6rem;
+            height: 0.08rem;
+        }
+    }
+    &__button--close{
+        display: block;
+        content: "";
+        background-color: none;
+        width: 2.6rem;
+        height: 0.08rem;
+        position: relative;
+        top:50%;
+        &:before{
+            position: absolute;
+            content: "";
+            background-color: red;
+            width: 2.6rem;
+            height: 0.08rem;
+            rotate: 45deg;
+        }
+        &:after{
+            position: absolute;
+            content: "";
+            background-color: blue;
+            width: 2.6rem;
+            height: 0.08rem;
+            rotate: -45deg;
+        }
+    }
+    &__button--area{
+        cursor: pointer;
+        position: fixed;
+        top:1.5rem;
+        right: 2.5rem;//40px
+        height: 2.62rem;
+        width: 2.62rem;
+        @include g.pc{
+            display: none;
+        }
+    }
+}

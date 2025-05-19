@@ -1,0 +1,17 @@
+@use "../foundation/global/index" as g;
+
+.l-footer{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index:2;
+    grid-row:3/4;
+    @include g.pc{
+        width: 100%;
+        position: unset;
+       
+    }
+    &__inner{
+        height: 100%;
+    }
+}

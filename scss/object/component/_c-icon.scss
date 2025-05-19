@@ -1,0 +1,9 @@
+@use "../../foundation/global/index" as g;
+
+.c-icon{
+    &__mobile{
+    font-size: 8rem;
+    color: g.$color-lightGray;
+    margin: 4rem;
+    }
+}

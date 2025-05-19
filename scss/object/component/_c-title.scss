@@ -1,0 +1,29 @@
+@use "../../foundation/global/index" as g;
+
+.c-title{
+    &__hero{
+        font-size: 9.6vw;
+        color: g.$color-gray;
+            @include g.tab{
+                font-size: 4.32vw;
+            }
+            @include g.pc{
+                font-size: 2.08vw;
+            }
+    }
+    &__contents{
+        font-size: clamp(3.75rem,6vw,6.2rem);
+    }
+    &__card{
+        font-size: clamp(3.125rem,4vw,6.2rem);
+        color: g.$color-gray;
+    }
+    &__grid{
+        font-size: 1.5rem;
+        color: g.$color-black;
+    }
+    &__grid--area{
+        grid-row: 2/3;
+    }
+}
+    

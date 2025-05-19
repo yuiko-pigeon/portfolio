@@ -1,0 +1,9 @@
+@use "../../foundation/global/index" as g;
+
+.u-padding{
+    &__left{
+        @include g.pc{
+            padding-left: 6.5%;
+        }
+    }
+}

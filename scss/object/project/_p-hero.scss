@@ -1,0 +1,106 @@
+@use "../../foundation/global/index" as g;
+
+.p-hero{
+    display: flex;
+    align-items:center;
+    width: 100%;
+    aspect-ratio: 375/285;
+        @include g.pc{
+        aspect-ratio: 1553 /530;
+        }
+    &__background{
+        background-color: g.$color-black;
+        width: 70%;
+        position: absolute;
+        left:15%;
+        z-index: -2;
+        height: auto;
+        aspect-ratio:700/480;
+        @include g.pc{
+            aspect-ratio: 1197/480;
+        }
+    }
+    /*&__menu{
+        background-image: url(../../picture/three-burgers-zoom.jpg);
+        background-repeat: no-repeat;
+        background-size: 270%;
+        background-position: 14.27% 46.8%;
+        width: 100%;
+        aspect-ratio: 375/285;
+        position: relative;
+        z-index: 10;
+            @include g.tab{
+            aspect-ratio: 834/285;
+            background-size: 120%;
+            background-position: calc(50% - 0%) calc(50% - 3.5%);
+            width: 100%;
+            }
+            @include g.pc{
+            background-image: url(../../picture/threeburgers.jpeg);
+            aspect-ratio: 1553 /239;
+            background-size: 105%;
+            background-position: 10% 48%;
+            }
+    }*/
+    &__imageArea{
+        position: relative;
+        overflow: hidden;
+        z-index: 10;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 375 / 285;
+        @include g.tab{
+            aspect-ratio: 834 / 285;
+        }
+        @include g.pc{
+            aspect-ratio: 1553 / 239;
+        }
+    }
+    &__title--area{
+        display: flex;
+        flex-direction:column ;
+        padding-left: 6.7%;
+        font-size: 9.6vw;
+        color: g.$color-white;
+            @include g.tab{
+                font-size: 4.32vw;
+                padding-left: 10.3%;
+                width: 100%;
+                flex-direction: row;
+                align-items: center;
+            }
+            @include g.pc{
+                font-size: 2.08vw;
+                padding-left: 5.6%;
+                
+            }
+    }
+    &__title--menu{
+        line-height: 2.637rem;//42.19px
+        font: g.$bold 2.25rem g.$fontR;
+        margin-bottom: 12px;
+        @include g.tab{
+            font-size: 3.75rem;
+            margin: 0%;
+        }
+    }
+    &__title--menucontent{
+        font-size: 1rem;
+        line-height: 1.485rem;//23.76px
+        @include g.tab{
+            padding-left: 2.2%;
+        }
+        @include g.pc{
+            font-size: 0.83vw;
+            padding-top: 12px;
+        }
+    }
+    /*&__single{
+        aspect-ratio: 375/225;
+    }*/
+    &__singleArea{
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+}

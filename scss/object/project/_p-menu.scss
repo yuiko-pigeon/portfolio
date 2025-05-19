@@ -1,0 +1,32 @@
+@use "../../foundation/global/index" as g;
+
+.p-menu{
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top:0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    //transition: all 0.3s linear 5ms;
+    &__menulist{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__list{
+        color: g.$color-black;
+        padding:50px 0 50px 50px;
+        }
+    &__inner{
+        position: relative;
+    }
+    @include g.pc{
+        display: none;
+    }
+    &.open{
+        right:0;
+    }
+
+}

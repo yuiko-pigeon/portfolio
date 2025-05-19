@@ -1,0 +1,19 @@
+@use "../foundation/global/index" as g;
+
+.l-wrapper{
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box; //box-sizing:inherit は、親要素のbox-sizingを継承する
+    position: relative;
+    overflow-x: hidden;
+    min-height: 100vh;
+    grid-template-rows:13rem 1fr 3rem;
+    grid-template-columns: 100%;
+    
+   &.fix{
+    overflow: hidden;
+    max-height: 100vh;
+   }
+}

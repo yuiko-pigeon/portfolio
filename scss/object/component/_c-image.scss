@@ -1,0 +1,11 @@
+@use "../../foundation/global/index" as g;
+
+.c-image{
+    &__round{
+        display: block;
+        border-radius: 50%;
+        height: 20rem;
+        object-fit: cover;
+        width: 20rem;
+    }
+}

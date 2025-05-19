@@ -1,0 +1,28 @@
+@use "../../foundation/global/index" as g;
+
+.c-link{
+    &__list{
+        cursor: pointer;
+        &:link{
+            color: g.$color-black;
+            text-decoration: none;
+        }
+        &:visited{
+            color: g.$color-black;
+            text-decoration: none;
+        }
+        &:hover{
+            color: g.$color-black;
+            text-decoration: underline;
+            text-decoration-color: g.$color-black;
+        }
+        &:focus{
+            color: g.$color-black;
+            text-decoration: none;
+        }
+        &:active{
+            color: g.$color-black;
+            text-decoration: none;
+        } 
+    }
+}

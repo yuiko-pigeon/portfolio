@@ -1,0 +1,17 @@
+@use "../../foundation/global/index" as g;
+
+.p-card{
+        width: 85%;
+        //background-color: bisque;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 8% 0;
+        position: relative;
+        z-index: -1;
+        @include g.pc{
+            padding: 5% 0;
+        }
+}
