@@ -15,38 +15,40 @@
 <body>
     <div class="l-wrapper" id="js-wrapper">
         <header class="l-header" role="banner">
-            <div class="u-text__small p-header__title">
-                <h1 class="p-header__logo--area">
-                    <a href="/"><img class="lazyload p-header__logo" src="picture/logo2.png" alt="ロゴ：and 8" ></a>
-                </h1>
+            <div class="p-header__inner">
+                <div class="u-text__small p-header__title">
+                    <h1 class="p-header__logo--area">
+                        <a href="/"><img class="lazyload p-header__logo" src="picture/logo2.png" alt="ロゴ：and 8" ></a>
+                    </h1>
+                </div>
+                <!--hamburgerbutton-->
+                <div  class="c-hamburger__button--area" id="js-hamburger">
+                    <div class="c-hamburger__button--open" ></div>
+                </div>
+                <!--hamburgerbutton-->
+                <div class="header_link p-header__nav ">
+                    <nav class="header-nav header-hmbnav" id="">
+                        <ul class="p-header__menulist">
+                            <li class="">
+                                <a href="" class="c-link__list"> And 8 </a>
+                            </li>
+                            <li class="">
+                                <a class="c-link__list"> Service </a>
+                            </li>   
+                            <li class="">
+                                <a href="" class="c-link__list"> Works </a>
+                            </li>
+                            <li class="">
+                                <a class="c-link__list"> Profile </a>
+                            </li>
+                            <li class="">
+                                <div class="">
+                                <a href="" class="c-link__list" >Contact </a></div> <!--受講申込みだけナビとは別に作って背景枠ボックスごとリンクできるようにする。そして一番右に設置して、そこに合わせてflexboxを設置する?-->
+                            </li>
+                        </ul>
+                    </nav>
+                </div><!--header_link-->
             </div>
-            <!--hamburgerbutton-->
-            <div  class="c-hamburger__button--area" id="js-hamburger">
-                <div class="c-hamburger__button--open" ></div>
-            </div>
-            <!--hamburgerbutton-->
-            <div class="header_link p-header__nav ">
-                <nav class="header-nav header-hmbnav" id="">
-                    <ul class="p-header__menulist">
-                        <li class="">
-                            <a href="" class="c-link__list"> And 8 </a>
-                        </li>
-                        <li class="">
-                            <a class="c-link__list"> Service </a>
-                        </li>   
-                        <li class="">
-                            <a href="" class="c-link__list"> Works </a>
-                        </li>
-                        <li class="">
-                            <a class="c-link__list"> Profile </a>
-                        </li>
-                        <li class="">
-                            <div class="">
-                            <a href="" class="c-link__list" >Contact </a></div> <!--受講申込みだけナビとは別に作って背景枠ボックスごとリンクできるようにする。そして一番右に設置して、そこに合わせてflexboxを設置する?-->
-                        </li>
-                    </ul>
-                </nav>
-            </div><!--header_link-->
         </header> 
         <!--hamburgermenu-->
         <nav class="p-menu" id="js-nav">
@@ -95,19 +97,19 @@
                     <article class="p-card u-margin__top--card p-slide__in">
                         <h3 class="c-title__card">Coding</h3>
                             <i class="fa-solid fa-mobile-screen-button c-icon__mobile"></i>
-                        <p class="c-text u-margin__text--card c-text__center">- 静的コーディング -<br>HTML/CSS<br><br>- アニメーション -<br>JavaScript/GSAP(簡易)<br>レスポンシブ対応</p>
+                        <p class="c-text u-margin__text--card c-text__center u-font">- 静的コーディング -<br>HTML/CSS<br><br>- アニメーション -<br>JavaScript/GSAP(簡易)<br>レスポンシブ対応</p>
                     </article>
                     <article class="p-card u-padding__left u-margin__top--card p-slide__in">
                         <h3 class="c-title__card">WordPress</h3>
                         <i class="fa-brands fa-wordpress c-icon__mobile"></i>
-                        <p class="c-text u-margin__text--card c-text__center">- WordPressサイトの構築 -<br>
+                        <p class="c-text u-margin__text--card c-text__center u-font">- WordPressサイトの構築 -<br>
                             テーマカスタマイズ<br>オリジナルテーマの作成<br>ブログやコーポレートサイトに対応</p>
-                        <p  class="u-margin__text--card c-text">クラッシックエディタ・ブロックエディタを利用して構築します。</p>
+                        <p  class="u-margin__text--card c-text u-font">クラッシックエディタ・ブロックエディタを利用して構築します。</p>
                     </article>
                     <articlse class="p-card u-margin__top--card u-margin__bottom--card p-slide__in">
                         <h3 class="c-title__card">Upkeep</h3>
                         <i class="fa-solid fa-screwdriver-wrench c-icon__mobile"></i>
-                        <p class="c-text u-margin__text--card c-text__center">既存サイトのテキスト修正<br>画像差し替え<br>CSS調整等<br></p>
+                        <p class="c-text u-margin__text--card c-text__center u-font">既存サイトのテキスト修正<br>画像差し替え<br>CSS調整等<br></p>
                     </article>
                 </section>
             </section>
@@ -118,7 +120,7 @@
                         <figure class="p-grid__cell p-slide__in js-open-modal" data-index="0"> <!--data-index="0"-->
                             <img src="./picture/noimage.jpg" alt="works1" class="p-grid__image">
                             <figcaption class="p-grid__text">
-                                <h4 class="c-title__grid--works p-title__grid--area">有限会社 らきカンパニー様</h4>
+                                <h4 class="c-title__grid--works p-title__grid--area u-font">有限会社 らきカンパニー様</h4>
                                 <p class="c-text__gray u-margin__text--card c-text__center">HTML/CSS/JavaScript/WordPress</p>
                                 <p class="p-grid__icon">link git</p>
                             </figcaption>
@@ -126,7 +128,7 @@
                         <figure class="p-grid__cell p-slide__in js-open-modal" data-index="1">
                             <img src="./picture/noimage.jpg" alt="works2" class="p-grid__image">
                             <figcaption class="p-grid__text">
-                                <h4 class="c-title__grid--works p-title__grid--area">株式会社 ここホーム様</h4>
+                                <h4 class="c-title__grid--works p-title__grid--area u-font">株式会社 ここホーム様</h4>
                                 <p class="c-text__gray u-margin__text--card c-text__center">HTML/CSS/JavaScript/React</p>
                                 <p class="p-grid__icon">link git</p>
                             </figcaption>
@@ -134,7 +136,7 @@
                         <figure class="p-grid__cell p-slide__in js-open-modal" data-index="2">
                             <img src="./picture/noimage.jpg" alt="works1" class="p-grid__image">
                             <figcaption class="p-grid__text">
-                                <h4 class="c-title__grid--works p-title__grid--area">宮野農園</h4>
+                                <h4 class="c-title__grid--works p-title__grid--area u-font">宮野農園</h4>
                                 <p class="c-text__gray u-margin__text--card c-text__center">WordPress</p>
                                 <p class="p-grid__icon">link git</p>
                             </figcaption>
@@ -142,7 +144,7 @@
                         <figure class="p-grid__cell p-slide__in js-open-modal" data-index="3">
                             <img src="./picture/noimage.jpg" alt="works1" class="p-grid__image">
                             <figcaption class="p-grid__text">
-                                <h4 class="c-title__grid--works p-title__grid--area">Hamburgerサイト（架空）</h4>
+                                <h4 class="c-title__grid--works p-title__grid--area u-font">Hamburgerサイト（架空）</h4>
                                 <p class="c-text__gray u-margin__text--card c-text__center">WordPress</p>
                                 <p class="p-grid__icon">link git</p>
                             </figcaption>
@@ -150,7 +152,7 @@
                         <figure class="p-grid__cell p-slide__in js-open-modal" data-index="4">
                             <img src="./picture/noimage.jpg" alt="works2" class="p-grid__image">
                             <figcaption class="p-grid__text">
-                                <h4 class="c-title__grid--works p-title__grid--area">模写コーディング</h4>
+                                <h4 class="c-title__grid--works p-title__grid--area u-font">模写コーディング</h4>
                                 <p class="c-text__gray u-margin__text--card c-text__center">WordPress</p>
                                 <p class="p-grid__icon">link git</p>
                             </figcaption>
@@ -158,8 +160,8 @@
                         <figure class="p-grid__cell p-slide__in js-open-modal" data-index="5">
                             <img src="./picture/noimage.jpg" alt="works2" class="p-grid__image">
                             <figcaption class="p-grid__text">
-                                <h4 class="c-title__grid--works p-title__grid--area">Works 2</h4>
-                                <p class="c-text__gray u-margin__text--card c-text__center">WordPress</p>
+                                <h4 class="c-title__grid--works p-title__grid--area u-font">Works 2</h4>
+                                <p class="c-text__gray u-margin__text--card c-text__center ">WordPress</p>
                                 <p class="p-grid__icon">link git</p>
                             </figcaption>
                         </figure>
@@ -173,7 +175,7 @@
                         <img src="./picture/noimage.jpg" alt="プロフィール画像" class="c-image__round p-grid-profile__cell--image">
                         <figcaption class="p-grid-profile__cell--textarea">
                             <h3 class="u-margin__center--none-pc c-title__grid p-grid-profile__cell--name">yuiko</h3>
-                            <p class="p-grid-profile__cell--text c-text__grid--profile u-lineheight__large">愛知県在住のWebコーダー、鈴木 結子と申します。WordPressを使ったサイト構築を中心に、破綻しにくいコードとユーザー目線の設計を心がけています。HTML、CSS、JavaScriptを活用し、レスポンシブ対応や保守性の高いコーディングを得意とします。制作会社様やWebディレクター様の意図を汲み取り、柔軟かつ丁寧な対応でプロジェクトをサポート。将来はフロントエンドエンジニアとしてさらにスキルを磨くことを目指しています。エンドユーザー様には、使いやすく見栄えの良いサイトをお届けします。</p>
+                            <p class="p-grid-profile__cell--text c-text__grid--profile u-lineheight__large u-font">愛知県在住のWebコーダー、鈴木 結子と申します。WordPressを使ったサイト構築を中心に、破綻しにくいコードとユーザー目線の設計を心がけています。HTML、CSS、JavaScriptを活用し、レスポンシブ対応や保守性の高いコーディングを得意とします。制作会社様やWebディレクター様の意図を汲み取り、柔軟かつ丁寧な対応でプロジェクトをサポート。将来はフロントエンドエンジニアとしてさらにスキルを磨くことを目指しています。エンドユーザー様には、使いやすく見栄えの良いサイトをお届けします。</p>
                         </figcaption>
                     </figure>
                 </div>
@@ -181,10 +183,10 @@
             <section class="p-block__service">
                 <div class="c-solid__area u-margin__top"> 
                     <h2 class="c-solid__before u-margin c-title__contents">Contact</h2>
-                    <p class="p-contact__textarea u-margin__midium--center c-text__center--tab c-text">制作の依頼・ご相談・ご質問などお気軽にお問い合わせください。
+                    <p class="p-contact__textarea u-margin__midium--center c-text__center--tab c-text u-font">制作の依頼・ご相談・ご質問などお気軽にお問い合わせください。
                         <br>1〜3日以内にご返信いたします。
-                        <br>下記フォームよりわかる範囲でご記入ください。必須の項目は必ずご記入お願いします。</p>
-                    <form class="p-contact u-margin__midium--center c-text__large u-margin__top--small">
+                        <br>下記フォームよりご記入ください。</p>
+                    <form class="p-contact u-margin__midium--center c-text__large u-margin__top--small u-font">
                         <label>name　<a class="c-text__required">必須</a></label>
                         <input type="text" name="name" placeholder="お名前" readonly  class="c-label">
                         <label>mail　<a class="c-text__required">必須</a></label>

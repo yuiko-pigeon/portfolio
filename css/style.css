@@ -125,7 +125,8 @@ input, select {
 .l-header {
   height: 13rem;
   display: flex;
-  position: relative;
+  position: fixed;
+  top: 0;
 }
 @media screen and (min-width: 781px) {
   .l-header {
@@ -713,6 +714,10 @@ input, select {
   text-decoration: none;
 }
 
+.p-header__inner {
+  position: relative;
+  width: 100%;
+}
 .p-header__title {
   display: flex;
   font: 700 2.5rem "Roboto", Noto Sans JP, MyYuGothicM, YuGothic, -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", Meiryo, Verdana, arial, helvetica, sans-serif;
@@ -1070,5 +1075,9 @@ input, select {
 .u-center__text {
   display: flex;
   justify-self: center;
+}
+
+.u-font {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
