@@ -2,10 +2,46 @@
 
 .p-grid-profile{
     display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        @include g.pc{
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
+    width: 85%;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr ;
+    min-height: auto;
+    @include g.pc{
+        width: 80%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    &__cell--image{
+        grid-row: 1/2;
+        justify-self: center;
+        margin-bottom:4.84rem;
+       @include g.pc{
+            grid-row: 1/2;
+            grid-column: 1/2;
+            margin-right: 3rem;
         }
+    }
+    &__cell--textarea{
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        @include g.pc{
+            grid-column: 2/3;
+            grid-row: 1/1;
+            margin-right: 2.5rem;
+        }
+    }
+    &__cell--name{
+        grid-row: 1/2;
+        height: 6rem;
+        @include g.pc{
+            padding: 0 0 0 35.2%;
+            margin: 0;
+        }
+    }
+    &__cell--text{
+        grid-row: 2/3;
+    }
 }

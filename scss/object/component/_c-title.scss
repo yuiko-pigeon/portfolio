@@ -19,11 +19,12 @@
         color: g.$color-gray;
     }
     &__grid{
-        font-size: 1.5rem;
+        font-size: 3.5rem;
         color: g.$color-black;
     }
-    &__grid--area{
-        grid-row: 2/3;
+    &__grid--works{
+        font-size: 1.5rem;
+        color: g.$color-black;
     }
 }
     

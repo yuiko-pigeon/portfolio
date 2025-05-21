@@ -1,0 +1,15 @@
+@use "../../foundation/global/index" as g;
+
+.p-contact{
+    display: flex;
+    flex-direction: column;
+    width: 80.3%;
+    row-gap: 1rem;
+    @include g.tab{
+        width: 36.5rem;
+        max-width: 89.3%;
+    }
+    &__textarea{
+        width:80.3%
+    }
+}

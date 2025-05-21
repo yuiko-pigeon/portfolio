@@ -1,15 +1,42 @@
 @use "../../foundation/global/index" as g;
 
 .c-text{
-    color: g.$color-gray;
+    color: g.$color-black;
     font-size: 1rem;
     line-height: 2.5rem;
     &__center{
         text-align: center;
     }
+    &__center--tab{
+        @include g.tab{
+            text-align: center;
+        }
+    }
+    &__midium{
+        font-size: 1.4rem;
+    }
     &__large{
-        font-size: 2rem;
+        font-size: 1.2rem;
+        color: g.$color-black;
+        line-height: 2.5rem;
+        @include g.tab{
+            font-size: 1.52rem;
+        }
+    }
+    &__grid--profile{
+        font-size: 1.3rem;
+        @include g.pc{
+            font-size: 1.55rem;
+        }
+    }
+    &__gray{
         color: g.$color-gray;
+        font-size: 1rem;
+        line-height: 2.5rem;
+    }
+    &__required{
+        color: g.$color-red;
+        font-size: 0.8rem;
         line-height: 2.5rem;
     }
 }

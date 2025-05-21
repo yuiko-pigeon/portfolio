@@ -4,8 +4,14 @@
     &__round{
         display: block;
         border-radius: 50%;
-        height: 20rem;
+        aspect-ratio: 1/1;
         object-fit: cover;
-        width: 20rem;
+        width: 61.7%;
+        max-height: 25rem;
+        max-width: 25rem;
+        @include g.pc{
+            max-height: none;
+            max-width: none;
+        }
     }
 }

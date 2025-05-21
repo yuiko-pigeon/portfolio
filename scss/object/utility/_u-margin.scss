@@ -4,6 +4,12 @@
     &__center{
         margin: 0 auto;
     }
+    &__center--none-pc{
+        margin: 0 auto;
+        @include g.pc{
+            margin: 0;
+        }
+    }
     &__top{
         margin-top: 6rem;
     }
@@ -20,7 +26,7 @@
         }
     }
     &__midium--center{
-        margin:5rem auto 0 auto;
+        margin:5rem auto;
     }//profileイメージ上部
     &__bottom--card{
         margin-bottom: 3.4375rem;
