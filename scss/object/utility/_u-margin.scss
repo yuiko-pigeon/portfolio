@@ -4,10 +4,10 @@
     &__center{
         margin: 0 auto;
     }
-    &__center--none-pc{
-        margin: 0 auto;
+    &__center--large-pc{
+        margin: 5rem auto;
         @include g.pc{
-            margin: 0;
+            margin: 2.44rem;
         }
     }
     &__top{
@@ -15,6 +15,9 @@
     }
     &__top--small{
         margin-top: 3rem;
+    }
+    &__top--xsmall{
+        margin-top: 1rem;
     }
     &__top--card{
         margin-top:1rem;

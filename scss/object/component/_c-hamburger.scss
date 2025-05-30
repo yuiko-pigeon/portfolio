@@ -5,61 +5,88 @@
         display: block;
         content: "";
         background-color: g.$color-black;
-        width: 2.6rem;
+        width: 1.35rem;
         height: 0.08rem;
         position: relative;
         top: 50%;
+        @include g.tab{
+            width: 2.6rem;
+        }
         &:before{
             position: absolute;
-            top:-12px;
-            left:0;
+            top:-7px;
+            right:0;
             content: "";
-            background-color: red;
-            width: 2.6rem;
+            background-color: g.$color-black;
+            width: 1.35rem;
             height: 0.08rem;
+            @include g.tab{
+                width: 2.6rem;
+                top: -0.75rem;
+            }
         }
         &:after{
             position: absolute;
-            top:12px;
-            left:0;
+            top:7px;
+            right:0;
             content: "";
-            background-color: blue;
-            width: 2.6rem;
+            background-color: g.$color-black;
+            width: 1.35rem;
             height: 0.08rem;
+            @include g.tab{
+                width: 2.6rem;
+                top: -0.75rem;
+            }
         }
     }
     &__button--close{
-        display: block;
+        display: none;
         content: "";
         background-color: none;
-        width: 2.6rem;
+        width: 1.6rem;
         height: 0.08rem;
         position: relative;
         top:50%;
+        @include g.tab{
+            width: 2.6rem;
+        }
         &:before{
             position: absolute;
             content: "";
-            background-color: red;
-            width: 2.6rem;
+            background-color: g.$color-black;
+            width: 1.6rem;
             height: 0.08rem;
             rotate: 45deg;
+            @include g.tab{
+                width: 2.6rem;
+            }
         }
         &:after{
             position: absolute;
             content: "";
-            background-color: blue;
-            width: 2.6rem;
+            background-color: g.$color-black;
+            width: 1.6rem;
             height: 0.08rem;
             rotate: -45deg;
+            @include g.tab{
+                width: 2.6rem;
+            }
+        }
+        &.is-appear{
+            display: block;
         }
     }
     &__button--area{
         cursor: pointer;
         position: fixed;
-        top:1.5rem;
-        right: 2.5rem;//40px
+        top:0rem;
+        right: -1.7%;
         height: 2.62rem;
         width: 2.62rem;
+        @include g.tab{
+            top: 1.5rem;
+            right: 2.5%;
+        }
         @include g.pc{
             display: none;
         }

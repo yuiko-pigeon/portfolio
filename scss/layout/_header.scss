@@ -2,13 +2,13 @@
 
 
 .l-header{
-    height: 13rem;
+    height: 13rem;//215px
     display: flex;
-    position: fixed;
-    top: 0;
+    position: absolute;
+    grid-row: 1/2;
     //background: antiquewhite;//仮
         @include g.tab{
-            height: 13rem;
+            height: 13rem;//217px
         }
         @include g.pc{
             display: flex;

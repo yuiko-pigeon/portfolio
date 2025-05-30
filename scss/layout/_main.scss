@@ -1,7 +1,8 @@
 @use "../foundation/global/index" as g;
 
 .l-main{
-    flex-grow: 1;
+    grid-row: 2/3;
+    min-height: 100%;
         @include g.pc{
             width: 100%;
             grid-row:2/3;

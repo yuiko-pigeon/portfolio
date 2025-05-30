@@ -5,6 +5,7 @@
         position: relative;
         width: 100%;
     }
+
     &__title{
         display: flex;
         font: g.$bold 2.5rem g.$fontR;//40px
@@ -40,32 +41,56 @@
             } 
         }
     }
+
     &__nav{ //ヘッダーメニューPCのみ表示
         display: none;
         @include g.pc{
-            display: block;    
-            margin-right: 30px;
+            display: flex;    
+            align-items: center;
+            margin-right: 1.875rem;
+            width: 28rem;
+            height: 5.8rem;
+            right: 6rem;
+            top: 7.4%;
+            background-color: rgba(239, 239, 239, 0.8);
+            position: fixed;
+            z-index: 10000;
+            border-radius: 10% / 50%;
         }
     }
+
+    &__navarea{
+        display: flex;
+        align-items: center;
+    }
+
     &__menulist{
         display: flex;
-        width: 100%;
-        gap: 1.71%;
-        position: absolute;
-        top: 65%;
-        left: 70%;
+        align-items: center;
+        width: 27.44rem;
+        gap: 8.71%;
+        position: fixed;
+        top: unset;
+        right: 6rem;
         font-family:g.$fontN
     }
+
     &__logo{
         position: absolute;
-        left: 1rem;
-        top: 2rem;
-        @include g.pc{
-            left: 4rem;
-            top: -2rem;
-            &--area{
-                position: relative;
-            }
+        left: 0;
+        top: 1rem;
+        width: clamp(1rem, 66vw, 18rem);
+        @include g.tab{
+            left: 1rem;
+            top: 2rem;
         }
+        @include g.pc{
+            top: -4rem;
+            width: auto;
+        }
+    }
+
+    &__logo--area{
+        position: relative;
     }
 }

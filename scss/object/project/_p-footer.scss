@@ -4,9 +4,7 @@
 .p-footer{
     &__text{
         display: block;
-        font-family: g.$fontMp;
-        font-weight: g.$Mbold;
-        color: g.$color-white;
+        color: g.$color-black;
         @include g.sp{
             font-size: 1.125rem;//18px
         }
@@ -14,18 +12,19 @@
             font-size:1.25rem;
         }        
     }
-    &__text--small{
+    &__copyright{
         display: block;
-        font-family: g.$fontMp;
-        font-weight: g.$Mbold;
-        color: g.$color-white;
-        font-size: 0.875rem;//14px
-        
+        width: 30%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 0.81rem;
+        height: 100%;
+        line-height: 1.5rem;
+        color: g.$color-black;
     }
-    &__color{
+    &__solid{
         display: block;
-        background-color: g.$color-lightGray;
-        background-size: cover;
+        border-top: solid 1px g.$color-lightGray;
         height: 100%;//%に?
     }
 

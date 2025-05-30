@@ -6,4 +6,14 @@
     color: g.$color-lightGray;
     margin: 4rem;
     }
+    &__git{
+        font-size: 1.3rem;
+    }
+    &__link{
+        font-size: 1.3rem;
+        & + .c-icon__git{
+            margin-right: 1rem;
+        }
+    }
+    
 }

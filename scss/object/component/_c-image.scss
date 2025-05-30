@@ -1,14 +1,18 @@
 @use "../../foundation/global/index" as g;
 
 .c-image{
-    &__round{
+    &__square{
         display: block;
-        border-radius: 50%;
         aspect-ratio: 1/1;
         object-fit: cover;
-        width: 61.7%;
+        width: 15.1rem;
+        height: 15.1rem;
         max-height: 25rem;
         max-width: 25rem;
+        @include g.tab{
+            width: 18.8rem;
+            height: 18.8rem;
+        }
         @include g.pc{
             max-height: none;
             max-width: none;

@@ -14,7 +14,8 @@ tl.fromTo(".p-menu", {
 
 //hamburgerメニューtoggle
 const hamburger = document.querySelector('#js-hamburger');
-const hamburgerClose = document.querySelector('#js-hamburgerClose');
+const hamburgerClose = document.querySelector('#js-hamburger-close');
+const closeButton = document.querySelector('#js-close-button');
 const nav = document.querySelector('#js-nav');
 const fix = document.querySelector('#js-wrapper');
 
@@ -24,6 +25,7 @@ hamburger.addEventListener('click',function(){
   if(!menuOpen){
     nav.classList.add('open');
     fix.classList.add('fix');
+    closeButton.classList.add('is-appear');
     tl.play().timeScale(1);
     
     menuOpen = true;
@@ -34,6 +36,7 @@ hamburgerClose.addEventListener('click',function(){
   if(menuOpen){
     nav.classList.remove('open');
     fix.classList.remove('fix');
+    closeButton.classList.remove('is-appear');
     tl.timeScale(1);
     tl.reverse();
     menuOpen = false;
@@ -42,7 +45,7 @@ hamburgerClose.addEventListener('click',function(){
 
 //gsap mainvisual
 gsap.to(".p-hero__background", { 
-    backgroundColor: "rgba(188, 186, 186, 0.8)",
+    backgroundColor: "rgba(188, 186, 186, 0.63)",
     duration: 3, 
     delay: 1,
      });
@@ -119,16 +122,16 @@ document.addEventListener("DOMContentLoaded", function () {
       title: '宮野農園',
     },
     {
-      img: 'picture/noimage.jpg',
-      title: 'Portfolio 4',
+      img: 'picture/works-hamburger.webp',
+      title: 'Hamburger(架空)',
     },
     {
       img: '/picture/noimage.jpg',
-      title: 'Portfolio 4',
+      title: 'Portfolio',
     },
     {
       img: 'picture/noimage.jpg',
-      title: 'Portfolio 4',
+      title: '',
     },
   ];
 

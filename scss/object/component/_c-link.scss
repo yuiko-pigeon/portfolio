@@ -25,4 +25,29 @@
             text-decoration: none;
         } 
     }
+    &__icon{
+        cursor: pointer;
+        transition: opacity 0.3s ease;
+        &:link{
+            color: g.$color-black;
+            text-decoration: none;
+        }
+        &:visited{
+            color: g.$color-black;
+            text-decoration: none;
+        }
+        &:hover{
+            color: g.$color-black;
+            opacity: 0.7;
+            text-decoration-color: g.$color-black;
+        }
+        &:focus{
+            color: g.$color-black;
+            text-decoration: none;
+        }
+        &:active{
+            color: g.$color-black;
+            text-decoration: none;
+        } 
+    }
 }
