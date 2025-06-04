@@ -7,4 +7,26 @@
         height: 26rem;
         width: 100%;
     }
+    &__send{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0.5rem;
+        background-color: g.$color-lightGrayT;
+        color: g.$color-black;
+        font-size: 1rem;
+        border: solid 0.15px g.$color-gray;
+        border-radius: 4px;
+        width: clamp(4rem,28%,6rem);
+        cursor: pointer;
+        transition: background-color 0.3s;
+        &:hover {
+          background-color: g.$color-gray;
+          color: g.$color-beige;
+          
+        }
+        @include g.tab {
+            width: 18%;
+        }
+    }
 }

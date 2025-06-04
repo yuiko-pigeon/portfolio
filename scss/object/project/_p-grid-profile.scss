@@ -12,6 +12,7 @@
         width: 80%;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 1fr;
+        row-gap: 5rem;
     }
     &__cell--image{
         grid-row: 1/2;
@@ -24,7 +25,7 @@
             grid-row: 2/3;
             grid-column: 1/2;
             margin-top: 4rem;
-            margin-right: 17.4%;
+            margin-right: 20%;
         }
     }
     &__cell--textarea{

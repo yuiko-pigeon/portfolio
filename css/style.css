@@ -168,8 +168,13 @@ input, select {
   position: relative;
   overflow-x: hidden;
   min-height: 100vh;
-  grid-template-rows: 13rem 1fr 1.5rem;
+  grid-template-rows: 5rem 1fr 1.5rem;
   grid-template-columns: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .l-wrapper {
+    grid-template-rows: 13rem auto 1fr;
+  }
 }
 .l-wrapper::before {
   content: "";
@@ -179,9 +184,9 @@ input, select {
   width: 100%;
   height: 100%;
   background-image: url("../../picture/background.jpeg");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
-  opacity: 0.15;
+  opacity: 0.55;
   z-index: -3;
 }
 .l-wrapper.fix {
@@ -190,7 +195,7 @@ input, select {
 }
 
 .c-title__hero {
-  font-size: 9.6vw;
+  font-size: 4.32vw;
   color: #707070;
 }
 @media screen and (min-width: 781px) {
@@ -335,7 +340,7 @@ input, select {
 }
 .c-link__icon:hover {
   color: #3E3E3E;
-  opacity: 0.7;
+  opacity: 0.6;
   -webkit-text-decoration-color: #3E3E3E;
           text-decoration-color: #3E3E3E;
 }
@@ -354,12 +359,14 @@ input, select {
   background-color: #3E3E3E;
   width: 1.35rem;
   height: 0.08rem;
-  position: relative;
+  position: absolute;
   top: 50%;
+  right: 22.5%;
+  z-index: 1;
 }
 @media screen and (min-width: 781px) {
   .c-hamburger__button--open {
-    width: 2.6rem;
+    width: 2rem;
   }
 }
 .c-hamburger__button--open:before {
@@ -373,8 +380,8 @@ input, select {
 }
 @media screen and (min-width: 781px) {
   .c-hamburger__button--open:before {
-    width: 2.6rem;
-    top: -0.75rem;
+    width: 2rem;
+    top: -0.7rem;
   }
 }
 .c-hamburger__button--open:after {
@@ -388,8 +395,8 @@ input, select {
 }
 @media screen and (min-width: 781px) {
   .c-hamburger__button--open:after {
-    width: 2.6rem;
-    top: -0.75rem;
+    width: 2rem;
+    top: 0.7rem;
   }
 }
 .c-hamburger__button--close {
@@ -398,12 +405,15 @@ input, select {
   background-color: none;
   width: 1.6rem;
   height: 0.08rem;
-  position: relative;
+  position: absolute;
   top: 50%;
+  right: 19.4%;
+  z-index: 2;
 }
 @media screen and (min-width: 781px) {
   .c-hamburger__button--close {
     width: 2.6rem;
+    right: 11.4%;
   }
 }
 .c-hamburger__button--close:before {
@@ -434,19 +444,30 @@ input, select {
 }
 .c-hamburger__button--close.is-appear {
   display: block;
+  visibility: visible;
 }
 .c-hamburger__button--area {
   cursor: pointer;
   position: fixed;
-  top: 0rem;
-  right: -1.7%;
-  height: 2.62rem;
-  width: 2.62rem;
+  top: 0.5rem;
+  right: 3.3%;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  background-color: rgba(239, 239, 239, 0.2);
+  box-shadow: -4px -4px 8px #fff, 4px 4px 8px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s ease-in-out;
+  z-index: 999;
+}
+.c-hamburger__button--area.is-square {
+  border-radius: 0%;
 }
 @media screen and (min-width: 781px) {
   .c-hamburger__button--area {
     top: 1.5rem;
     right: 2.5%;
+    height: 3.5rem;
+    width: 3.5rem;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -551,15 +572,15 @@ input, select {
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 15.1rem;
-  height: 15.1rem;
+  width: 13.5rem;
+  height: 13.5rem;
   max-height: 25rem;
   max-width: 25rem;
 }
 @media screen and (min-width: 781px) {
   .c-image__square {
-    width: 18.8rem;
-    height: 18.8rem;
+    width: 16.3rem;
+    height: 16.3rem;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -576,6 +597,29 @@ input, select {
 .c-label__message {
   height: 26rem;
   width: 100%;
+}
+.c-label__send {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0.5rem;
+  background-color: rgba(188, 186, 186, 0.55);
+  color: #3E3E3E;
+  font-size: 1rem;
+  border: solid 0.15px #707070;
+  border-radius: 4px;
+  width: clamp(4rem, 28%, 6rem);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.c-label__send:hover {
+  background-color: #707070;
+  color: #efefef;
+}
+@media screen and (min-width: 781px) {
+  .c-label__send {
+    width: 18%;
+  }
 }
 
 .p-hero {
@@ -747,18 +791,42 @@ input, select {
   right: -100%;
   width: 100%;
   height: 100%;
+  z-index: 1000;
 }
 .p-menu__menulist {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 3rem 0;
 }
 .p-menu__list {
   color: #3E3E3E;
-  padding: 50px 0 50px 50px;
+  padding: 50px 0;
 }
 .p-menu__inner {
   position: relative;
+  font-size: 1rem;
+  background-color: #efefef;
+  z-index: 0;
+  height: 100dvh;
+}
+@media screen and (min-width: 781px) {
+  .p-menu__inner {
+    font-size: 1.5rem;
+  }
+}
+.p-menu__inner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../picture/background.jpeg");
+  background-size: contain;
+  background-position: center;
+  opacity: 0.55;
+  z-index: -1;
 }
 @media screen and (min-width: 1200px) {
   .p-menu {
@@ -909,8 +977,8 @@ input, select {
     margin-right: 1.875rem;
     width: 28rem;
     height: 5.8rem;
-    right: 6rem;
-    top: 7.4%;
+    right: 2.5rem;
+    top: 4.4%;
     background-color: rgba(239, 239, 239, 0.8);
     position: fixed;
     z-index: 10000;
@@ -928,7 +996,7 @@ input, select {
   gap: 8.71%;
   position: fixed;
   top: unset;
-  right: 6rem;
+  right: 3rem;
   font-family: "Noto Sans JP", MyYuGothicM, YuGothic, -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", Meiryo, Verdana, arial, helvetica, sans-serif;
 }
 .p-header__logo {
@@ -1097,6 +1165,7 @@ input, select {
     width: 80%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr;
+    row-gap: 5rem;
   }
 }
 .p-grid-profile__cell--image {
@@ -1114,7 +1183,7 @@ input, select {
     grid-row: 2/3;
     grid-column: 1/2;
     margin-top: 4rem;
-    margin-right: 17.4%;
+    margin-right: 20%;
   }
 }
 .p-grid-profile__cell--textarea {
@@ -1205,11 +1274,17 @@ input, select {
     margin-top: 3rem;
   }
 }
+.u-margin__top--send {
+  margin-top: 2.5rem;
+}
 .u-margin__midium--center {
   margin: 5rem auto;
 }
 .u-margin__bottom--card {
   margin-bottom: 3.4375rem;
+}
+.u-margin__bottom--contact {
+  margin-bottom: 7rem;
 }
 .u-margin__text--card {
   margin: 0 5%;

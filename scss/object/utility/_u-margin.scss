@@ -28,11 +28,17 @@
             margin-top: 3rem;
         }
     }
+    &__top--send{
+        margin-top: 2.5rem;
+    }
     &__midium--center{
         margin:5rem auto;
     }//profileイメージ上部
     &__bottom--card{
         margin-bottom: 3.4375rem;
+    }
+    &__bottom--contact{
+        margin-bottom: 7rem;
     }
     &__text--card{
         margin: 0 5%;

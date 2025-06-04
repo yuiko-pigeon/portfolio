@@ -60,23 +60,22 @@
                 <div  class="c-hamburger__button--area" id="js-hamburger-close">
                     <div class="c-hamburger__button--close" id="js-close-button"></div>
                 </div>
-                <div class="">
+                <div class="u-font">
                     <ul class="p-menu__menulist">
-                        <li class="p-menu__list c-link__list">
-                            <a href="" class="" aria-label="And 8のホームへ"> And 8 </a>
+                        <li class="p-menu__list">
+                            <a href="#" class="c-link__icon" aria-label="And 8のホームへ"> And 8 </a>
                         </li>
-                        <li class="p-menu__list c-link__list">
-                            <a class=""> Service </a>
+                        <li class="p-menu__list">
+                            <a href="#service" class="c-link__icon"> Service </a>
                         </li>   
-                        <li class="p-menu__list c-link__list">
-                            <a href="" class=""> Works </a>
+                        <li class="p-menu__list ">
+                            <a href="#works" class="c-link__icon"> Works </a>
                         </li>
-                        <li class="p-menu__list c-link__list">
-                            <a class=""> Profile </a>
+                        <li class="p-menu__list">
+                            <a href="#profile" class="c-link__icon"> Profile </a>
                         </li>
-                        <li class="p-menu__list c-link__list">
-                            <div class="">
-                            <a href="" class="" >Contact </a></div> <!--受講申込みだけナビとは別に作って背景枠ボックスごとリンクできるようにする。そして一番右に設置して、そこに合わせてflexboxを設置する?-->
+                        <li class="p-menu__list">
+                            <a href="#contact" class="c-link__icon" >Contact </a> <!--受講申込みだけナビとは別に作って背景枠ボックスごとリンクできるようにする。そして一番右に設置して、そこに合わせてflexboxを設置する?-->
                         </li>
                     </ul>
                 </div>
@@ -94,7 +93,7 @@
 しっかりとしたコミュニケーションで円滑なサイト作りを提供します。</p> 
                </p>
             </article> -->
-            <section class="p-block">
+            <section class="p-block" id="service">
                 <div class="c-solid__area u-margin__top"> 
                     <h2 class="c-solid__before  c-title__contents">Service</h2>
                 </div>
@@ -134,7 +133,7 @@
                         </li>
                 </ul>
             </section>
-            <section class="p-block">
+            <section class="p-block" id="works">
                 <div class="c-solid__area u-margin__top--small"> 
                     <h2 class="c-solid__before u-margin c-title__contents">Works</h2>
                     <section class="p-grid u-margin__top">
@@ -198,7 +197,7 @@
                     </section>
                 </div>
             </section>
-            <section class="p-block__service">
+            <section class="p-block__service" id="profile">
                 <div class="c-solid__area u-margin__top"> 
                     <h2 class="c-solid__before u-margin c-title__contents">Profile</h2>
                     <figure class="p-grid-profile  u-margin__midium--center">
@@ -227,7 +226,7 @@
                     </figure>
                 </div>
             </section>
-            <section class="p-block__service">
+            <section class="p-block__service" id="contact">
                 <div class="c-solid__area u-margin__top"> 
                     <h2 class="c-solid__before u-margin c-title__contents">Contact</h2>
                     <p class="p-contact__textarea u-margin__midium--center c-text__center--tab c-text u-font p-slide__in u-weight__medium">
@@ -242,7 +241,8 @@
                         <label>会社名・屋号名　<a class="c-text__required">必須</a></label>
                         <input type="text" name="company" placeholder="会社名" required aria-required="true" class="c-label">
                         <label>お問い合わせ内容　<a class="c-text__required">必須</a></label>
-                        <textarea name="message" placeholder="お問い合わせ内容" required aria-required="true" class="c-label__message"></textarea>
+                        <textarea name="message" placeholder="お問い合わせ内容" required aria-required="true" class="c-label__message "></textarea>
+                        <button type="submit" class="c-label__send u-margin__bottom--contact u-margin__top--send u-font">送信</button>
                     </form>
                 </div>
             </section>

@@ -4,12 +4,12 @@ const tl = gsap.timeline({ paused: true });
 
 tl.fromTo(".p-menu", { 
     autoAlpha: 0,
-    right: "-100%"},//p-menuの挙動に合わせる
+    right: "-100%",
+    },//p-menuの挙動に合わせる
     {
     autoAlpha: 1,
     duration: 1.5,
-    backgroundColor: "#ffffff",
-    right: "0%"
+    right: "0%",
     });
 
 //hamburgerメニューtoggle
@@ -19,12 +19,22 @@ const closeButton = document.querySelector('#js-close-button');
 const nav = document.querySelector('#js-nav');
 const fix = document.querySelector('#js-wrapper');
 
+tl.eventCallback("onComplete", () => {
+  hamburger.style.borderRadius = '0';
+});
+
+tl.eventCallback("onReverseComplete", () => {
+  hamburger.style.borderRadius = '50%';
+});
+
+
 let menuOpen = false;
 
 hamburger.addEventListener('click',function(){
   if(!menuOpen){
     nav.classList.add('open');
     fix.classList.add('fix');
+    hamburgerClose.style.borderRadius = '0'; 
     closeButton.classList.add('is-appear');
     tl.play().timeScale(1);
     
@@ -36,6 +46,7 @@ hamburgerClose.addEventListener('click',function(){
   if(menuOpen){
     nav.classList.remove('open');
     fix.classList.remove('fix');
+    hamburger.style.borderRadius = '50%'; // ← 明示的に指定
     closeButton.classList.remove('is-appear');
     tl.timeScale(1);
     tl.reverse();

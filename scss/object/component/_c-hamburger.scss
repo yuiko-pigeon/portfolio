@@ -7,10 +7,12 @@
         background-color: g.$color-black;
         width: 1.35rem;
         height: 0.08rem;
-        position: relative;
+        position: absolute;
         top: 50%;
+        right: 22.5%;
+        z-index:1;
         @include g.tab{
-            width: 2.6rem;
+            width: 2rem;
         }
         &:before{
             position: absolute;
@@ -21,8 +23,8 @@
             width: 1.35rem;
             height: 0.08rem;
             @include g.tab{
-                width: 2.6rem;
-                top: -0.75rem;
+                width: 2rem;
+                top: -0.7rem;
             }
         }
         &:after{
@@ -34,8 +36,8 @@
             width: 1.35rem;
             height: 0.08rem;
             @include g.tab{
-                width: 2.6rem;
-                top: -0.75rem;
+                width: 2rem;
+                top: 0.7rem;
             }
         }
     }
@@ -45,10 +47,13 @@
         background-color: none;
         width: 1.6rem;
         height: 0.08rem;
-        position: relative;
+        position: absolute;
         top:50%;
+        right: 19.4%;
+        z-index: 2;
         @include g.tab{
             width: 2.6rem;
+            right: 11.4%;
         }
         &:before{
             position: absolute;
@@ -74,18 +79,31 @@
         }
         &.is-appear{
             display: block;
+            visibility: visible;
         }
     }
     &__button--area{
         cursor: pointer;
         position: fixed;
-        top:0rem;
-        right: -1.7%;
-        height: 2.62rem;
-        width: 2.62rem;
+        top:0.5rem;
+        right: 3.3%;
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 50%;
+        background-color: rgba(239, 239, 239, 0.2);
+        box-shadow:
+        -4px -4px 8px #fff,
+        4px 4px 8px rgb(0 0 0 / 24%);
+        transition: all 0.3s ease-in-out;
+        z-index: 999;
+        &.is-square{
+            border-radius: 0%;
+        }
         @include g.tab{
             top: 1.5rem;
             right: 2.5%;
+            height: 3.5rem;
+            width: 3.5rem;
         }
         @include g.pc{
             display: none;
