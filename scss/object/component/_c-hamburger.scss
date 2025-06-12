@@ -108,5 +108,10 @@
         @include g.pc{
             display: none;
         }
+        &:hover {
+            box-shadow:
+              -2px -2px 4px #fff,
+              2px 2px 4px rgb(0 0 0 / 24%);
+        }
     }
 }

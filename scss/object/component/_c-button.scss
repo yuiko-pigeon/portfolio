@@ -26,8 +26,16 @@
             -4px -4px 8px #fff,
             4px 4px 8px rgb(0 0 0 / 24%);
             transition: all 0.3s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                box-shadow:
+                  -2px -2px 4px #fff,
+                  2px 2px 4px rgb(0 0 0 / 24%);
+            }
         }
-    }
+    } 
 
     &__contact--text{
         @include g.pc{

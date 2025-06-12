@@ -1,13 +1,7 @@
 @use "../../foundation/global/index" as g;
 
 .u-width{
-    width: 89.3%;
-    @include g.tab{
-        width:85.49%;//713px
-    }
-    @include g.pc{
-        width: 87.12%;//1353px
+    &__text{
+        width: 1.8rem;
     }
 }
-
-//HTMLではまだ全て使われていない
