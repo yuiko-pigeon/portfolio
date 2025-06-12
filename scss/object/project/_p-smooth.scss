@@ -1,0 +1,30 @@
+@use "../../foundation/global/index" as g;
+
+#smooth-content{
+    padding-top: 7rem;
+    overscroll-behavior: contain;
+    @include g.pc{
+        padding-top: 13rem;
+    }
+}
+
+.p-smooth{
+    &__background{
+        position: relative;
+        background-color: g.$color-beige;
+        z-index: 1;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("../../picture/background.jpeg");
+            background-size: contain;
+            background-position: center;
+            opacity: 0.55; // ← 擬似要素で背景画像だけが薄くなる！
+            z-index: -3;
+        }
+    }
+}

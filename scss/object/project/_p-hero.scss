@@ -9,26 +9,27 @@
         aspect-ratio: 1553 /530;
         }
     &__background{ //JS
-        background-color: g.$color-black;
-        width: 70%;
+        width: 100%;
         position: absolute;
-        left:15%;
         z-index: -2;
         height: auto;
         aspect-ratio:700/480;
         @include g.pc{
+            width: 70%;
             left: 14.7%;
-            top: 207.8px;
+            //top: 207.8px;
             aspect-ratio: 1197/581;
         }
     }
     &__background--image{
-            width: 59%;
-            position: absolute;
-            left: 20.3%;
-            z-index: -2;
+        width: 100%;
+        position: absolute;
+        z-index: -2;
+            @include g.pc{
+                width: 59%;
+                left: 20.3%;
         }
-    
+    }
     /*&__menu{
         background-image: url(../../picture/three-burgers-zoom.jpg);
         background-repeat: no-repeat;

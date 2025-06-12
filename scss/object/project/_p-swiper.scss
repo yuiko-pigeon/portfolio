@@ -31,17 +31,51 @@
     &:nth-child(3n + 3) {
     /*3、6、9、3n+3枚目の背景色 */
         background-color: g.$color-lightGray;
+    }
+    img{
+      max-width: 90%;
+      max-height: 80vh;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+    }
   }
-}
 }
 
 //swiperのスタイル
 
   
   .swiper-slide {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    aspect-ratio: 1/1;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    img {
+      width: 45.25% !important;
+      position: absolute;
+      aspect-ratio: 1/1;
+    }
   }
+  .swiper-button-next{
+    &::after{
+      color: g.$color-white !important;
+    }
+  }
+  .swiper-button-prev{
+    &::after{
+      color: g.$color-white !important;
+    }
+  }
+  .swiper-pagination{
+    &-bullets{
+      position: absolute;
+      bottom: 22.7% !important;
+    }
+    &-bullet{
+      --swiper-theme-color: white;
+    }
+  }
+  
   
